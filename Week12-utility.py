@@ -13,11 +13,16 @@ def LoadFile(filename):
     newfile.close()
     return contents
 
-#Functuion 3: UpdateString
+#Function 3: UpdateString
 def UpdateString(string1, string2, index):
     startindex = index
     endindex = index+1
     newstring = string1[:startindex] + string2 + string1[endindex:]
     PrintOutput(newstring)
 
+#Function 4: FindWordCount
+def FindWordCount(function_list, function_str):
+    function_list = str(function_list)
+    count = function_list.count(function_str)
+    return count
 
