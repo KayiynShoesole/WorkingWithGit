@@ -54,3 +54,12 @@ def Union(list1, list2):
     list2.reverse()
     list3 = list1 + list2
     return list3
+
+#Function 7: Intersection
+def Intersection(list1, list2):
+    list3 = []
+    for a in list1:
+        for b in list2:
+            if a == b:
+                list3 += [b]
+    return list3
