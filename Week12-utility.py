@@ -12,3 +12,12 @@ def LoadFile(filename):
     contents = newfile.readlines()
     newfile.close()
     return contents
+
+#Functuion 3: UpdateString
+def UpdateString(string1, string2, index):
+    startindex = index
+    endindex = index+1
+    newstring = string1[:startindex] + string2 + string1[endindex:]
+    PrintOutput(newstring)
+
+
