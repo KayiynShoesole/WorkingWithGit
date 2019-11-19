@@ -1,5 +1,5 @@
 # Kayiyn Shoemaker
-# CSCI 102- Secion B
+# CSCI 102- Section B
 # Week 12- Part A
 
 #   Function 1 : PrintOutput
