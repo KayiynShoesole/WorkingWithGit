@@ -42,15 +42,15 @@ def ScoreFinder(players, scores, name):
         
 #Function 6: Union
 def Union(list1, list2):
-    list1.reverse()
+    list1.reverse() #Reverse lists so duplicates are removed from back
     list2.reverse()
     for a in list1:
-        if not list1.count(a) == 1:
+        if not list1.count(a) == 1: #Check for duplicates
             list1.remove(a)
     for b in list2:
-        if not list2.count(b) == 1:
+        if not list2.count(b) == 1: #Check for duplicates
             list2.remove(b)
-    list1.reverse()
+    list1.reverse() #Reverse lists back to normal position
     list2.reverse()
     list3 = list1 + list2
     return list3
@@ -71,7 +71,7 @@ def NotIn(list1, list2):
         found = False
         for b in list2:
             if a == b:
-                found = True
+                found = True #If a matches a value in b, say so
         if not found:
-            list3 += [a]
+            list3 += [a] #If a does not match a value in b, add to list
     return list3
