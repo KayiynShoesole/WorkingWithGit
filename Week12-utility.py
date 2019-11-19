@@ -26,3 +26,18 @@ def FindWordCount(function_list, function_str):
     count = function_list.count(function_str)
     return count
 
+#Function 5: ScoreFinder
+def ScoreFinder(players, scores, name):
+    name = name.lower()
+    player_found = False
+    index = 0
+    for player in players:
+        player = player.lower()
+        if player == name:
+            PrintOutput(f'{players[index]} got a score of {scores[index]}')
+            player_found = True
+        index += 1
+    if not player_found:
+        PrintOutput('player not found')
+        
+
