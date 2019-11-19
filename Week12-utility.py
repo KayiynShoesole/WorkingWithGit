@@ -40,4 +40,17 @@ def ScoreFinder(players, scores, name):
     if not player_found:
         PrintOutput('player not found')
         
-
+#Function 6: Union
+def Union(list1, list2):
+    list1.reverse()
+    list2.reverse()
+    for a in list1:
+        if not list1.count(a) == 1:
+            list1.remove(a)
+    for b in list2:
+        if not list2.count(b) == 1:
+            list2.remove(b)
+    list1.reverse()
+    list2.reverse()
+    list3 = list1 + list2
+    return list3
