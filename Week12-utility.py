@@ -63,3 +63,15 @@ def Intersection(list1, list2):
             if a == b:
                 list3 += [b]
     return list3
+
+#Function 8: NotIn
+def NotIn(list1, list2):
+    list3 = []
+    for a in list1:
+        found = False
+        for b in list2:
+            if a == b:
+                found = True
+        if not found:
+            list3 += [a]
+    return list3
